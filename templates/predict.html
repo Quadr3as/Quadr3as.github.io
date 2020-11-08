@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<center>
+<p class="heading">Uploaded Image<br><hr></p>
+<img src={{ img_path }} class="predict_image">
+<style>
+    p
+    {
+        margin-top:10px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size:40px;
+    }
+.predict_image
+{
+    width:400px;
+    height:400px;
+    margin-bottom:50px;
+    border:2px solid black;
+    border-radius: 10px;;
+}
+.result
+{
+    background-color:lightgray;
+    width:430px;
+    height:55px;
+    border-radius: 10px;
+    border: 2px solid darkgray;
+}
+</style>
+<p>Category<hr></p>
+<h1 class="result">{{ result }}</h1>
+</center>
+{% endblock %}
